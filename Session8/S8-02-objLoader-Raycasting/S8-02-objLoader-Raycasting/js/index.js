@@ -7,6 +7,7 @@ var object;
 
 var objects = [];
 
+
 init();
 animate();
 
