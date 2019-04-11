@@ -36,4 +36,11 @@ The exercise I did on the class is to change the color of graph randomly when yo
 
 The file of raycasting shows the way of inputing models.
 
-The file of Eye-Interaction shows a more accurate way of letting the eyes to see the position where the mouse is. 
+The file of Eye-Interaction shows a more accurate way of letting the eyes to see the position where the mouse is.
+
+## Session9
+This file includes two projects called S9-01-RaycastAudio and S9-02-PostProcessing-Glitch respectively.
+
+The first file shows the way of playing some music by moving mouse on it.
+
+The second file shows the way of chanding the shader of the geometries.
