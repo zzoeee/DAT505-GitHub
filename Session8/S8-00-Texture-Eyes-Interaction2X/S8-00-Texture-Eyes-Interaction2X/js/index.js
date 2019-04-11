@@ -61,19 +61,19 @@ function init() {
 		yPos[i] = Math.random() * 100 - 50;
 
 		xPos [0] = 0;
-		yPos [0] = 0;
+		yPos [0] = 0;//middle
 
 		xPos [1] = -50;
-		yPos [1] = -50;
+		yPos [1] = -50;//left down
 
 		xPos [2] = 50;
-		yPos [2] = -50;
+		yPos [2] = -50;//right down
 
 		xPos [3] = -50;
-		yPos [3] = 50;
+		yPos [3] = 50;//left up
 
 		xPos [4] = 50;
-		yPos [4] = 50;
+		yPos [4] = 50;//right up
 
 		xPosMap[i] = map_range(xPos[i], -50, 50, 0, window.innerWidth);
 		yPosMap[i] = map_range(yPos[i], -50, 50, 0, window.innerHeight);
@@ -87,7 +87,7 @@ function init() {
 		mesh.scale.x = randSize;
 		mesh.scale.y = randSize;
 		mesh.scale.z = randSize;
-
+//add mesh to the scene
 		scene.add( mesh );
 		eyes.push( mesh );
 	}
@@ -115,16 +115,27 @@ function render() {
 		eyes[0].rotation.y = map_range(mouseX, 0, window.innerWidth, -1.14, 1.14);
 		eyes[0].rotation.x = map_range(mouseY, 0, window.innerHeight, -1.14, 1.14);
 
-		if (mouseX<140) eyes[1].rotation.y = map_range(mouseX, 0, 140, -0.2, 0.25);
-		else eyes[1].rotation.y = map_range(mouseX, 140, window.innerWidth, 0.25, 1.14);
+		if (mouseX<140) eyes[1].rotation.y = map_range(mouseX, 0, 140, -0.5, 0.2);
+		else eyes[1].rotation.y = map_range(mouseX, 140, window.innerWidth, 0.2, 1.14);
 		if (mouseY<810) eyes[1].rotation.x = map_range(mouseY, 0, 810, -1.14, -0.25);
-		else eyes[1].rotation.x = map_range(mouseY, 810, window.innerHeight, -0.25, 0);
+		else eyes[1].rotation.x = map_range(mouseY, 810, window.innerHeight, -0.2, 0);
+
+		if (mouseX<480) eyes[2].rotation.y = map_range(mouseX, 0,480, -1.2, -0.1);
+		else eyes[2].rotation.y = map_range(mouseX, 480, window.innerWidth, -0.2, 0.2);
+		if (mouseY<810) eyes[2].rotation.x = map_range(mouseY, 0, 810, -1.14, -0.25);
+		else eyes[2].rotation.x = map_range(mouseY, 810, window.innerHeight, -0.2, 0);
 
 		if (mouseX<140) eyes[3].rotation.y = map_range(mouseX, 0, 140, -0.2, 0.25);
 		else eyes[3].rotation.y = map_range(mouseX, 140, window.innerWidth, 0.25, 1.14);
-		if (mouseY<35) eyes[3].rotation.x = map_range(mouseY, 0, 35, 0, 0.25);
-		else eyes[3].rotation.x = map_range(mouseY, 35, window.innerHeight, 0.25, 1.14);
+		if (mouseY<25) eyes[3].rotation.x = map_range(mouseY, 0, 25, 0, 0.25);
+		else eyes[3].rotation.x = map_range(mouseY, 25, window.innerHeight, 0.25, 1.14);
+
+		if (mouseX<480) eyes[4].rotation.y = map_range(mouseX, 0, 480, -1.2, -0.1);
+		else eyes[4].rotation.y = map_range(mouseX, 480, window.innerWidth, -0.2, 0.2);
+		if (mouseY<25) eyes[4].rotation.x = map_range(mouseY, 0, 25, -0.5, 0);
+		else eyes[4].rotation.x = map_range(mouseY, 25, window.innerHeight, 0, 1.14);
   }
+	// Render the scene
 	renderer.render( scene, camera );
 }
 
