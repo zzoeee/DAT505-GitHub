@@ -6,6 +6,7 @@ https://www.openprocessing.org/sketch/698614
 https://www.openprocessing.org/sketch/699270
 
 ## The link of my github:
+https://github.com/zzoeee/DAT505-GitHub/tree/master/YuTingWang-DAT505-Assignment-master
 
 ## The function of my project
 It is a brush which consists of a word called opinion that shows different colours randomly.The colourful words will appear on the canvas continuously when you press your mouse while the words stop appearing when you release your mouse.
