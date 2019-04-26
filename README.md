@@ -17,7 +17,7 @@ I changed the texture of the cube in the No.00 file and changed the material of 
 There are two examples about GUI provided by professor during the class.
 
 ## Session4 & Seesion5
-Tere are a homework called ArrayMesh-Exercise-template and an example called S4-ArrayMesh in the Session4 file.
+There are a homework called ArrayMesh-Exercise-template and an example called S4-ArrayMesh in the Session4 file.
 
 The homework shows some cubes rotating in different angles and the example is about array and rotation.
 
